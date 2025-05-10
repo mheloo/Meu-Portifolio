@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000 ;
+    color: #fff;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #5a03cc;
+    border: 0;
+    border-radius: 30px;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+h2.subtitulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.subtitulo span{
+    color: #6118c1;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #6104da;
+    transform: scale(1.05);
+}
+
+a {
+    text-decoration: none;
+    color: #5a03cc;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #5a03cc;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .2s ease-in-out;
+}
+
+.subtitulo {
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 8px #4a3369aa;
+}
+
+
+
+/* ESTILO NAVEGAÇÃO */
+.navegacao{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(16, 9, 26, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    z-index: 100;
+}
+
+.logo img{
+    width: 60px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 3rem;
+}
+
+ul li a:hover{
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    color: #6a14db;
+}
+
+.btn-navegacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+
+
+/* ESTILO HEADER */
+header{
+    display: flex;
+    min-height: 100vh;
+    padding: 30px 2%;
+}
+
+.inicio{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5% 15px 18%;
+}
+
+.inicio img{
+    width: 350px;
+    box-shadow: 1px -1px 51px 18px rgba(55,0,83,0.72);
+    border-radius: 50%;
+    border: 4px, solid, #5414a8;
+}
+
+.inicio h1{
+    font-size: 40px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 600;
+    text-shadow: 0px 0px 8px #4d03ad; 
+}
+
+.inicio p{
+    font-size: 20px;
+    color: #6118c1;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.titulo{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5%;
+}
+
+
+.titulo{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.titulo h1{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.titulo h1 span{
+    color: #6118c1;
+}
+
+.titulo p{
+    font-size: 18px;
+    color: #fff;
+    margin-top: 10px;
+    text-align: justify;
+    margin: 40px 8% 40px 0;
+}
+
+.titulo p span{
+    color: #6118c1;
+}
+
+
+
+
+/* ESTILIZAÇÃO SOBRE MIM */
+.sobre{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(55,0,83,0.7);
+    box-shadow: 1px -1px 51px 18px rgba(55,0,83,0.8);
+    padding: 70px 20%;
+}
+
+.txt-sobre h2 span{
+    color: #000;
+    text-shadow: 0px 0px 8px #6b4899; 
+}
+
+.flex-sobre{
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: #6118c1 2px solid;
+    backdrop-filter: blur(30px);
+    background: #4d03ad23;
+}
+
+.sobre p{
+    font-size: 18px;
+    color: #fff;
+    text-align: justify;
+}
+
+
+
+
+
+/* ESTILIZAÇÃO HABILIDADES */
+.especialidades{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+section.especialidades{
+    padding: 50px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+} 
+
+.especialidades .especialidade-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s ease-in-out;
+}
+
+.especialidades .especialidade-box:hover{
+    transform: scale(1.05);
+    box-shadow: 1px -1px 51px 18px rgba(55,0,83,0.72);
+}
+
+.especialidades .especialidade-box i{
+    font-size: 70px;
+    color: #6118c1;
+}
+
+.especialidades .especialidade-box h3{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+
+
+
+/* ESTILIZAÇÃO MEUS PROJETOS */
+.projetos .subtitulo span{
+    color: #000;
+    text-shadow: 0px 0px 8px #6b4899; 
+}
+
+
+.projetos{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: rgba(55,0,83,0.7);
+    box-shadow: 1px -1px 51px 18px rgba(55,0,83,0.8);
+}
+
+.img-projetos{
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
+}
+
+section.projetos{
+    padding: 50px 4%;
+}
+
+section.projetos .flex{
+    gap: 60px;
+} 
+
+.projetos .projetos-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    border: #6118c1 2px solid;
+    transition: .2s ease-in-out;
+}
+
+.projetos .projetos-box:hover{
+    transform: scale(1.05);
+    box-shadow: 1px -1px 51px 18px rgba(55,0,83,0.72);
+}
+
+.projetos .projetos-box h3{
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+
+
+
+/* ESTILO DO RODAPE */
+footer{
+    padding: 10px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+
+.interface .logo-footer img{
+    width: 3rem;
+}
+
+footer .flex{
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .line-footer{
+    padding: 10px 0;
+}
